@@ -1,0 +1,10 @@
+{
+    "name": "login",
+    "title": "Login Listing",
+    "explanation": "Login Listing",
+    "description": "Login Listing",
+    "version": 1,
+    "icon": "assets\/users\/addons\/login\/icon.png",
+    "extension": "addon",
+    "path": "users\/addons\/login\/"
+}

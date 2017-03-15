@@ -1,0 +1,28 @@
+[
+    {
+        "title": "User Avatar List",
+        "show_title": "1",
+        "unique_name": "users.addons.useravatar",
+        "icon": "fa-user",
+        "homepage": "0",
+        "allpages": "0",
+        "extensionpages": "1",
+        "viewside": "frontend",
+        "explanation": "",
+        "description": "",
+        "suffix_content": "",
+        "prefix_content": "",
+        "main_content": "",
+        "positions": ["sidebar"],
+        "setting": [{
+                "name": "show_inviter_link",
+                "label": "Show Inviter Link",
+                "type": "yesno"
+            }, {
+                "name": "my_account_link",
+                "label": "My Account Link",
+                "type": "text"
+            }]
+
+    }
+]

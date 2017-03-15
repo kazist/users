@@ -1,0 +1,57 @@
+{
+    "frontend": [{
+            "title": "Users List",
+            "description": "Management of Users.",
+            "controller": "Users\\Addons\\Users\\Controllers\\UsersController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "users.addons.users",
+            "route": "users/addons/users",
+            "arguments": "",
+            "keywords": "latest, users, list, addons",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 0,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }],
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Users\\Addons\\Code\\Controllers\\Admin\\AddonsController::taskAction",
+            "unique_name": "admin.users.addons.task",
+            "route": "admin/users/addons/task",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": "",
+            "keywords": "addons, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Users Charts",
+            "description": "Users Charts",
+            "controller": "Users\\Addons\\Users\\Controllers\\Admin\\UsersController::userPieChartIndexAction",
+            "unique_name": "admin.users.addons.users.piecharts",
+            "route": "admin/users/addons/users/piecharts",
+            "permissions": "can_view, can_viewown",
+            "arguments": "",
+            "keywords": "latest, users, list, addons",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 0,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }]
+
+} 	

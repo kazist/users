@@ -1,0 +1,22 @@
+{
+    "frontend": [{
+            "title": "Useravatar List",
+            "description": "Management of Useravatar.",
+            "controller": "Users\\Addons\\Useravatar\\Controllers\\UseravatarController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "users.addons.useravatar",
+            "route": "users/addons/useravatar",
+            "arguments": "",
+            "keywords": "latest, users, list, addons",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 0,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }]
+
+} 	

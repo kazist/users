@@ -1,0 +1,158 @@
+{
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Users\\Roles\\Code\\Controllers\\Admin\\RolesController::taskAction",
+            "unique_name": "admin.users.roles.task",
+            "route": "admin/users/roles/task",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": "",
+            "keywords": "roles, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Roles Routes",
+            "description": "Roles Routes.",
+            "controller": "Users\\Roles\\Code\\Controllers\\Admin\\RolesController::routesAction",
+            "unique_name": "admin.users.roles.routes",
+            "route": "admin/users/roles/routes",
+            "permissions": "can_view",
+            "arguments": "",
+            "keywords": "routes, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view"],
+                "ADMIN": ["can_view"]
+            }
+        }, {
+            "title": "Roles Routes",
+            "description": "Roles Routes.",
+            "controller": "Users\\Roles\\Code\\Controllers\\Admin\\RolesController::savepermissionAction",
+            "permissions": "can_add, can_write",
+            "unique_name": "admin.users.roles.savepermission",
+            "route": "admin/users/roles/savepermission",
+            "permissions": "can_view",
+            "arguments": "",
+            "keywords": "routes, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view"],
+                "ADMIN": ["can_view"]
+            }
+        }, {
+            "title": "Role List",
+            "description": "Management of Roles.",
+            "controller": "Users\\Roles\\Code\\Controllers\\Admin\\RolesController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "admin.users.roles",
+            "route": "admin/users/roles",
+            "arguments": "",
+            "keywords": "role, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Add Role ",
+            "description": "Add Role ",
+            "controller": "Users\\Roles\\Code\\Controllers\\Admin\\RolesController::addAction",
+            "unique_name": "admin.users.roles.add",
+            "route": "admin/users/roles/add",
+            "permissions": "can_add",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "role,add ",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"]
+            }
+        }, {
+            "title": "Edit Role {{ item.name }}",
+            "description": "Edit Role {{ item.name }}.",
+            "controller": "Users\\Roles\\Code\\Controllers\\Admin\\RolesController::editAction",
+            "unique_name": "admin.users.roles.edit",
+            "route": "admin/users/roles/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "role, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Role Detail: {{ item.name }}",
+            "description": "Role Detail: {{ item.name }}",
+            "controller": "Users\\Roles\\Code\\Controllers\\Admin\\RolesController::detailAction",
+            "unique_name": "admin.users.roles.detail",
+            "route": "admin/users/roles/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "role, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Role Delete: {{ item.name }}",
+            "description": "Role Delete: {{ item.name }}",
+            "controller": "Users\\Roles\\Code\\Controllers\\Admin\\RolesController::deleteAction",
+            "unique_name": "admin.users.roles.delete",
+            "route": "admin/users/roles/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "role, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"]
+            }
+        }, {
+            "title": "Role Save: {{ item.name }}",
+            "description": "Role Save: {{ item.name }}",
+            "controller": "Users\\Roles\\Code\\Controllers\\Admin\\RolesController::saveAction",
+            "unique_name": "admin.users.roles.save",
+            "route": "admin/users/roles/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "role, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }]
+} 	

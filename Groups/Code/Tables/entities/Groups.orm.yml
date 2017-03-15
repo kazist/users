@@ -1,0 +1,61 @@
+Users\Groups\Code\Tables\Groups:
+  table: users_groups
+  type: entity
+  id:
+    id:
+      type: integer
+      generator: { strategy: AUTO }
+  fields:
+    name:
+      name: name
+      type: string
+      length: 255
+      nullable: false
+    description:
+      name: description
+      type: text
+      nullable: true
+    public_default:
+      name: public_default
+      type: integer
+      length: 11
+      nullable: false
+    registered_default:
+      name: registered_default
+      type: integer
+      length: 11
+      nullable: false
+    published:
+      name: published
+      type: integer
+      length: 11
+      nullable: true
+    rights:
+      name: rights
+      type: text
+      nullable: true
+    created_by:
+      name: created_by
+      type: integer
+      length: 11
+      nullable: false
+    date_created:
+      name: date_created
+      type: datetime
+      nullable: false
+    modified_by:
+      name: modified_by
+      type: integer
+      length: 11
+      nullable: false
+    date_modified:
+      name: date_modified
+      type: datetime
+      nullable: false
+  lifecycleCallbacks:
+    prePersist:
+      - onPrePersist
+      - onPrePersistCallbacks
+    preUpdate:
+      - onPreUpdate
+      - onPreUpdateCallbacks

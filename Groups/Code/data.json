@@ -1,0 +1,22 @@
+
+[{
+        "tracking_id": "1",
+        "name": "Administrator",
+        "public_default": "0",
+        "registered_default": "0",
+        "published": "1"
+    }, {
+        "tracking_id": "2",
+        "name": "Registered",
+        "public_default": "0",
+        "registered_default": "1",
+        "published": "1"
+    }, {
+        "tracking_id": "3",
+        "name": "Public",
+        "public_default": "1",
+        "registered_default": "0",
+        "published": "1"
+    }]
+
+

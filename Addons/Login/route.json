@@ -1,0 +1,22 @@
+{
+    "frontend": [{
+            "title": "Login List",
+            "description": "Management of Login List",
+            "controller": "Users\\Addons\\Login\\Controllers\\LoginController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "users.addons.login",
+            "route": "users/addons/login",
+            "arguments": "",
+            "keywords": "latest, users, list, addons",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 0,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }]
+
+} 	

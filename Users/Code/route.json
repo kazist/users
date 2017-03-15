@@ -1,0 +1,299 @@
+{
+    "frontend": [{
+            "title": "Login With Google",
+            "description": "Login With Google",
+            "controller": "Users\\Users\\Code\\Controllers\\UsersController::googlereturnAction",
+            "unique_name": "users.users.googlereturn",
+            "route": "users/users/googlereturn",
+            "permissions": "can_view",
+            "arguments": {},
+            "keywords": "user, googlereturn, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 0,
+            "roles": {
+                "SUPER_ADMIN": ["can_view"],
+                "ADMIN": ["can_view"]
+            }
+        }, {
+            "title": "Login With Facebook",
+            "description": "Login With Facebook",
+            "controller": "Users\\Users\\Code\\Controllers\\UsersController::facebookreturnAction",
+            "unique_name": "users.users.facebookreturn",
+            "route": "users/users/facebookreturn",
+            "permissions": "can_view",
+            "arguments": {},
+            "keywords": "user, googlereturn, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 0,
+            "roles": {
+                "SUPER_ADMIN": ["can_view"],
+                "ADMIN": ["can_view"]
+            }
+        }, {
+            "title": "Edit User {{ item.name }}",
+            "description": "Edit User {{ item.name }}.",
+            "controller": "Users\\Users\\Code\\Controllers\\UsersController::fetchcaptchaAction",
+            "unique_name": "users.users.fetchcaptcha",
+            "route": "users/users/fetchcaptcha",
+            "permissions": "can_view",
+            "arguments": {},
+            "keywords": "user, fetchcaptcha, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 0,
+            "roles": {
+                "SUPER_ADMIN": ["can_view"],
+                "ADMIN": ["can_view"]
+            }
+        }, {
+            "title": "Edit User {{ item.name }}",
+            "description": "Edit User {{ item.name }}.",
+            "controller": "Users\\Users\\Code\\Controllers\\UsersController::editAction",
+            "unique_name": "users.users.edit",
+            "route": "users/users/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "user, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write", "can_writeown"],
+                "ADMIN": ["can_write", "can_writeown"]
+            }
+        }, {
+            "title": "User Detail: {{ item.name }}",
+            "description": "User Detail: {{ item.name }}",
+            "controller": "Users\\Users\\Code\\Controllers\\UsersController::detailAction",
+            "unique_name": "users.users.detail",
+            "route": "users/users/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "user, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "User Save: {{ item.name }}",
+            "description": "User Save: {{ item.name }}",
+            "controller": "Users\\Users\\Code\\Controllers\\UsersController::saveAction",
+            "unique_name": "users.users.save",
+            "route": "users/users/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "user, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write", "can_writeown"],
+                "ADMIN": ["can_write", "can_writeown"]
+            }
+        }],
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::taskAction",
+            "unique_name": "admin.users.users.task",
+            "route": "admin/users/users/task",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": "",
+            "keywords": "users, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "User List",
+            "description": "Management of Users.",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "admin.users.users",
+            "route": "admin/users/users",
+            "arguments": "",
+            "keywords": "user, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Add User ",
+            "description": "Add User .",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::addAction",
+            "unique_name": "admin.users.users.add",
+            "route": "admin/users/users/add",
+            "permissions": "can_add",
+            "arguments": {},
+            "keywords": "user,add",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"]
+            }
+        }, {
+            "title": "Edit User {{ item.name }}",
+            "description": "Edit User {{ item.name }}.",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::editAction",
+            "unique_name": "admin.users.users.edit",
+            "route": "admin/users/users/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "user, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write", "can_writeown"],
+                "ADMIN": ["can_write", "can_writeown"]
+            }
+        }, {
+            "title": "User Detail: {{ item.name }}",
+            "description": "User Detail: {{ item.name }}",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::detailAction",
+            "unique_name": "admin.users.users.detail",
+            "route": "admin/users/users/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "user, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "User Delete: {{ item.name }}",
+            "description": "User Delete: {{ item.name }}",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::deleteAction",
+            "unique_name": "admin.users.users.delete",
+            "route": "admin/users/users/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "user, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"]
+            }
+        }, {
+            "title": "User Save: {{ item.name }}",
+            "description": "User Save: {{ item.name }}",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::saveAction",
+            "unique_name": "admin.users.users.save",
+            "route": "admin/users/users/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "user, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write", "can_writeown"],
+                "ADMIN": ["can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Save Rights",
+            "description": "Save Rights",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::saverightsAction",
+            "unique_name": "users.users.saverights",
+            "route": "users/users/saverights",
+            "permissions": "can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "user, saverights, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write", "can_writeown"],
+                "ADMIN": ["can_write", "can_writeown"]
+            }
+        }, {
+            "title": "User List",
+            "description": "User List",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::userslistAction",
+            "unique_name": "users.users.userslist",
+            "route": "users/users/userslist",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "user, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Save User",
+            "description": "Save User",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::saveuserAction",
+            "unique_name": "users.users.saveuser",
+            "route": "users/users/saveuser",
+            "permissions": "can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "user, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write", "can_writeown"],
+                "ADMIN": ["can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Fetch User",
+            "description": "Fetch User",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::fetchuserAction",
+            "unique_name": "users.users.fetchuser",
+            "route": "users/users/fetchuser",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "user, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }
+    ]
+} 	

@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Users List",
+        "show_title": "1",
+        "unique_name": "users.addons.users",
+        "icon": "fa-user",
+        "homepage": "0",
+        "allpages": "0",
+        "extensionpages": "1",
+        "viewside": "frontend",
+        "explanation": "",
+        "description": "",
+        "suffix_content": "",
+        "prefix_content": "",
+        "main_content": "",
+        "positions": ["sidebar"]
+
+    }, {
+        "title": "Users List",
+        "show_title": "1",
+        "unique_name": "admin.users.addons.users.piecharts",
+        "icon": "fa-user",
+        "homepage": "1",
+        "allpages": "0",
+        "extensionpages": "0",
+        "viewside": "backend",
+        "explanation": "",
+        "description": "",
+        "suffix_content": "",
+        "prefix_content": "",
+        "main_content": "",
+        "positions": ["top_right"]
+
+    }
+]

@@ -1,0 +1,60 @@
+{# empty Twig template #}
+
+{% import "form.macro.twig" as forms %}
+
+<div class="cms-content form-horizontal">
+    <h1 class="component-header">{{ item.name }} </h1>
+
+    <small>
+        <i class="fa fa-clock-o"> Posted On:</i>{{ item.date_created|date('Y-m-d') }} 
+    </small>
+
+    {% if item.image %}
+        <div class="img-wrapper text-center">
+            <img src="{{ resized_image(item.avatar_file, 700) }}" alt="{{ item.title }}" title="{{ item.title }}">
+        </div> 
+    {% endif %}
+
+    {% if item.country_id %}
+        <div class="form-group country_id-group">
+            <label for="country_id" class="col-sm-3 control-label">Country:</label>
+            <div class="col-sm-9 kazicode-form-field ">
+                {{ item.country_id_name }}
+            </div>
+        </div>
+    {% endif %}
+
+    {% if item.country_id %}
+        <div class="form-group country_code-group">
+            <label for="country_code" class="col-sm-3 control-label">Country Code:</label>
+            <div class="col-sm-9 kazicode-form-field ">
+                {{ item.country_id_code }}
+            </div>
+        </div>
+    {% endif %}
+
+    {% if item.location_id %}
+        <div class="form-group location_id-group">
+            <label for="location_id" class="col-sm-3 control-label">Location:</label>
+            <div class="col-sm-9 kazicode-form-field ">
+                {{ item.location_id_name }}
+            </div>
+        </div>
+    {% endif %}
+
+    {% if item.town %}
+        <div class="form-group town-group">
+            <label for="town" class="col-sm-3 control-label">Town:</label>
+            <div class="col-sm-9 kazicode-form-field ">
+                {{ item.town }}
+            </div>
+        </div>
+    {% endif %}
+
+
+    {{ forms.input('id', 'hidden', item.id) }}
+
+    <div class="clearfix"></div>
+</div>
+
+

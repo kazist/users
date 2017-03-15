@@ -1,0 +1,31 @@
+
+[{
+        "tracking_id": "1",
+        "name": "Super Administrator",
+        "inviter_id": "1",
+        "is_admin": "1",
+        "username": "admin",
+        "gender": "male",
+        "password": "21232f297a57a5a743894a0e4a801fc3",
+        "email": "admin@test.com",
+        "country_id": "116",
+        "location_id": "1821",
+        "phone": "087 111 111 111",
+        "phone_iso": "KE",
+        "phone_code": "254",
+        "points": "0",
+        "last_date_active": "",
+        "avatar": "",
+        "verification": "",
+        "ordering": "",
+        "created_by": "",
+        "date_created": "",
+        "date_created": "",
+        "modified_by": "",
+        "date_modified": "",
+        "address": "Test Address, P.O Box 555555",
+        "published": "1",
+        "is_verified": "1"
+    }]
+
+

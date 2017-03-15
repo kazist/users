@@ -1,0 +1,1094 @@
+{
+    "views": {
+        "edit": {
+            "structure": {
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "name": "",
+                                "class_name": "col-sm-6",
+                                "items": [
+                                    {
+                                        "group": {
+                                            "name": "User Groups Detail",
+                                            "unique_name": "user_groups_detail",
+                                            "has_title": 1,
+                                            "user_right": null,
+                                            "hide_on_new": null,
+                                            "fields": [
+                                                "inviter_id",
+                                                "name",
+                                                "username",
+                                                "password",
+                                                "email",
+                                                "is_admin",
+                                                "is_verified",
+                                                "gender",
+                                                "town"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "tab": [
+                                            {
+                                                "name": "groups",
+                                                "unique_name": "groups",
+                                                "user_right": null,
+                                                "hide_on_new": null,
+                                                "tabcontent": {
+                                                    "columns": [
+                                                        {
+                                                            "name": "",
+                                                            "class_name": "col-sm-12",
+                                                            "items": [
+                                                                {
+                                                                    "group": {
+                                                                        "name": "Groups",
+                                                                        "unique_name": "groups",
+                                                                        "has_title": null,
+                                                                        "user_right": null,
+                                                                        "hide_on_new": null,
+                                                                        "fields": [
+                                                                            "group_id"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "name": "Roles",
+                                                "unique_name": "roles",
+                                                "user_right": null,
+                                                "hide_on_new": null,
+                                                "tabcontent": {
+                                                    "columns": [
+                                                        {
+                                                            "name": "",
+                                                            "class_name": "col-sm-12",
+                                                            "items": [
+                                                                {
+                                                                    "group": {
+                                                                        "name": "Roles",
+                                                                        "unique_name": "roles",
+                                                                        "has_title": null,
+                                                                        "user_right": null,
+                                                                        "hide_on_new": null,
+                                                                        "fields": [
+                                                                            "roles"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "",
+                                "class_name": "col-sm-6",
+                                "items": [
+                                    {
+                                        "group": {
+                                            "name": "Avatar",
+                                            "unique_name": "avatar",
+                                            "has_title": 1,
+                                            "user_right": null,
+                                            "hide_on_new": null,
+                                            "fields": [
+                                                "avatar"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "tab": [
+                                            {
+                                                "name": "User Bio",
+                                                "unique_name": "user_bio",
+                                                "user_right": null,
+                                                "hide_on_new": null,
+                                                "tabcontent": {
+                                                    "columns": [
+                                                        {
+                                                            "name": "",
+                                                            "class_name": "col-sm-12",
+                                                            "items": [
+                                                                {
+                                                                    "group": {
+                                                                        "name": "User Bio",
+                                                                        "unique_name": "user_bio",
+                                                                        "has_title": null,
+                                                                        "user_right": null,
+                                                                        "hide_on_new": null,
+                                                                        "fields": [
+                                                                            "country_id",
+                                                                            "location_id",
+                                                                            "address",
+                                                                            "phone"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "name": "Other Details",
+                                                "unique_name": "other_details",
+                                                "user_right": null,
+                                                "hide_on_new": null,
+                                                "tabcontent": {
+                                                    "columns": [
+                                                        {
+                                                            "name": "",
+                                                            "class_name": "col-sm-12",
+                                                            "items": [
+                                                                {
+                                                                    "group": {
+                                                                        "name": "Other Details",
+                                                                        "unique_name": "other_details",
+                                                                        "has_title": null,
+                                                                        "user_right": null,
+                                                                        "hide_on_new": null,
+                                                                        "fields": [
+                                                                            "points"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "name": "Modification Detail",
+                                                "unique_name": "modification_detail",
+                                                "user_right": null,
+                                                "hide_on_new": null,
+                                                "tabcontent": {
+                                                    "columns": [
+                                                        {
+                                                            "name": "",
+                                                            "class_name": "col-sm-12",
+                                                            "items": [
+                                                                {
+                                                                    "group": {
+                                                                        "name": "Other Detail",
+                                                                        "unique_name": "other_detail",
+                                                                        "has_title": 1,
+                                                                        "user_right": null,
+                                                                        "hide_on_new": null,
+                                                                        "fields": [
+                                                                            "created_by",
+                                                                            "date_created",
+                                                                            "modified_by",
+                                                                            "date_modified"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "ommitted": [
+                "id",
+                "salt",
+                "phone_iso",
+                "phone_code",
+                "verification",
+                "ordering",
+                "published",
+                "last_date_active"
+            ]
+        },
+        "table": {
+            "fields": [
+                "name",
+                "is_admin",
+                "gender",
+                "country_id",
+                "town",
+                "phone",
+                "is_verified",
+                "published",
+                "date_created",
+                "last_date_active"
+            ],
+            "has_label": [
+                "name",
+                "is_admin",
+                "gender",
+                "country_id",
+                "town",
+                "phone",
+                "is_verified",
+                "published",
+                "date_created",
+                "last_date_active"
+            ]
+        }
+    },
+    "rights": {
+        "tab": [],
+        "group": [],
+        "field": []
+    },
+    "customhtmls": [],
+    "fields": [
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "id",
+            "html_type": "text",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "id",
+            "class_name": "id",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "inviter_id",
+            "html_type": "autocomplete",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "name"
+                    ],
+                    "join_table_name": "users_users"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "0",
+            "name": "name",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "name",
+            "class_name": "name",
+            "default_value": "",
+            "size": "255",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "is_admin",
+            "html_type": "yesno",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "0",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "username",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "username",
+            "class_name": "username",
+            "default_value": "",
+            "size": "255",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "password",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "password",
+            "class_name": "password",
+            "default_value": "",
+            "size": "255",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "salt",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "view_side": "both",
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "email",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "email",
+            "class_name": "email",
+            "default_value": "",
+            "size": "255",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "gender",
+            "html_type": "select",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "customs": [
+                        {
+                            "value": "male",
+                            "text": "Male"
+                        },
+                        {
+                            "value": "female",
+                            "text": "Female"
+                        },
+                        {
+                            "value": "Male",
+                            "text": "male"
+                        },
+                        {
+                            "value": "Female",
+                            "text": "female"
+                        }
+                    ],
+                    "data_source": "custom"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "country_id",
+            "html_type": "select",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "name",
+                        " code"
+                    ],
+                    "join_table_name": "setup_countries"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "location_id",
+            "html_type": "select",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "customs": [],
+                    "data_source": "custom"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "town",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "view_side": "both",
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "phone",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "phone_iso",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "phone_code",
+            "html_type": "text",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "address",
+            "html_type": "text",
+            "mysql_type": "text",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "points",
+            "html_type": "text",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "group_id",
+            "html_type": "checkbox",
+            "mysql_type": "none",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "name"
+                    ],
+                    "join_table_name": "users_groups"
+                },
+                "save": {
+                    "saving_type": "multiple",
+                    "table_creation": "custom",
+                    "save_table_name": "users_users_groups",
+                    "save_field_name": "group_id",
+                    "foreign_field_name": "user_id"
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "roles",
+            "html_type": "checkbox",
+            "mysql_type": "none",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "title"
+                    ],
+                    "join_table_name": "users_roles"
+                },
+                "save": {
+                    "saving_type": "multiple",
+                    "table_creation": "custom",
+                    "save_table_name": "users_users_roles",
+                    "save_field_name": "role_id",
+                    "foreign_field_name": "user_id"
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "avatar",
+            "html_type": "media",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": {
+                    "file_path": "",
+                    "file_group_by": "id"
+                },
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "verification",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "is_verified",
+            "html_type": "yesno",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "ordering",
+            "html_type": "text",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "published",
+            "html_type": "yesno",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "created_by",
+            "html_type": "text",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "created_by",
+            "class_name": "created_by",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "0",
+            "name": "date_created",
+            "html_type": "datetime",
+            "mysql_type": "datetime",
+            "view_side": "both",
+            "index": "",
+            "id_name": "date_created",
+            "class_name": "date_created",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "modified_by",
+            "html_type": "text",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "modified_by",
+            "class_name": "modified_by",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "date_modified",
+            "html_type": "datetime",
+            "mysql_type": "datetime",
+            "view_side": "both",
+            "index": "",
+            "id_name": "date_modified",
+            "class_name": "date_modified",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "last_date_active",
+            "html_type": "datetime",
+            "mysql_type": "datetime",
+            "view_side": "both",
+            "index": "",
+            "id_name": "last_date_active",
+            "class_name": "last_date_active",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        }
+    ],
+    "primarykey": "id",
+    "table_name": "users_users",
+    "table_alias": "uu",
+    "foreignkey": "",
+    "renamedfields": "",
+    "main_fields": [
+        "id"
+    ],
+    "main_view": "table",
+    "has_view": "1",
+    "tie_field": "0",
+    "email_on_new": "0",
+    "email_on_edit": "0",
+    "email_on_delete": "0",
+    "subset_name": "users",
+    "right_field": "",
+    "query": {
+        "from": {
+            "table": "Users\\Users\\Code\\Tables\\Users",
+            "alias": "uu",
+            "name": "#__users_users"
+        },
+        "select": [
+            "uu.id",
+            "uu.inviter_id",
+            "uu_2528.name AS inviter_id_name",
+            "uu.name",
+            "uu.is_admin",
+            "uu.username",
+            "uu.password",
+            "uu.salt",
+            "uu.email",
+            "uu.gender",
+            "uu.country_id",
+            "sc.name AS country_id_name",
+            "sc.code AS country_id_code",
+            "uu.location_id",
+            "uu.town",
+            "uu.phone",
+            "uu.phone_iso",
+            "uu.phone_code",
+            "uu.address",
+            "uu.points",
+            "uu.avatar",
+            "mm.title AS avatar_title",
+            "mm.file AS avatar_file",
+            "uu.verification",
+            "uu.is_verified",
+            "uu.ordering",
+            "uu.published",
+            "uu.created_by",
+            "uu.date_created",
+            "uu.modified_by",
+            "uu.date_modified",
+            "uu.last_date_active"
+        ],
+        "leftjoin": [
+            {
+                "table": "Users\\Users\\Code\\Tables\\Users",
+                "alias": "uu_2528",
+                "name": "#__users_users",
+                "on": "uu.inviter_id = uu_2528.id"
+            },
+            {
+                "table": "Setup\\Countries\\Code\\Tables\\Countries",
+                "alias": "sc",
+                "name": "#__setup_countries",
+                "on": "uu.country_id = sc.id"
+            },
+            {
+                "table": "Media\\Media\\Code\\Tables\\Media",
+                "alias": "mm",
+                "name": "#__media_media",
+                "on": "uu.avatar = mm.id"
+            }
+        ]
+    }
+}

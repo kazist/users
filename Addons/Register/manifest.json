@@ -1,0 +1,10 @@
+{
+    "name": "register",
+    "title": "Register Listing",
+    "explanation": "Register Listing",
+    "description": "Register Listing",
+    "version": 1,
+    "icon": "assets\/users\/addons\/register\/icon.png",
+    "extension": "addon",
+    "path": "users\/addons\/register\/"
+}

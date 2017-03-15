@@ -1,0 +1,24 @@
+{
+    "title": "Users",
+    "description": "Users",
+    "alias": "users",
+    "icon": "fa-picture-o",
+    "home_link": "users\/users",
+    "is_core": "1",
+    "menulist": [{
+            "title": "Users",
+            "alias": "admin_users_users",
+            "url": "admin/users/users",
+            "children": []
+        }, {
+            "title": "Groups",
+            "alias": "admin_users_groups",
+            "url": "admin/users/groups",
+            "children": []
+        }, {
+            "title": "Roles",
+            "alias": "admin_users_roles",
+            "url": "admin/users/roles",
+            "children": []
+        }]
+}

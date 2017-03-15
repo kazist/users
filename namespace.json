@@ -1,0 +1,30 @@
+{
+    "UsersRoles": {
+        "namespace": "Users\\Roles",
+        "controller": "RolesController"
+    },
+    "UsersUsers": {
+        "namespace": "Users\\Users",
+        "controller": "UsersController"
+    },
+    "UsersGroups": {
+        "namespace": "Users\\Groups",
+        "controller": "GroupsController"
+    },
+    "UsersUsersRoles": {
+        "namespace": "Users\\Users\\Roles",
+        "controller": "RolesController"
+    },
+    "UsersUsersGroups": {
+        "namespace": "Users\\Users\\Groups",
+        "controller": "GroupsController"
+    },
+    "UsersGroupsRoles": {
+        "namespace": "Users\\Groups\\Roles",
+        "controller": "RolesController"
+    },
+    "UsersPermission": {
+        "namespace": "Users\\Permission",
+        "controller": "PermissionController"
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Users\\Permission\\Code\\Controllers\\Admin\\PermissionController::taskAction",
+            "unique_name": "admin.users.permissions.task",
+            "route": "admin/users/permissions/task",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": "",
+            "keywords": "permissions, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Permission List",
+            "description": "Management of Permissions.",
+            "controller": "Users\\Permission\\Code\\Controllers\\Admin\\PermissionController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "admin.users.permissions",
+            "route": "admin/users/permissions",
+            "arguments": {},
+            "keywords": "permission, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+
+        }, {
+            "title": "Add Permission",
+            "description": "Add Permission.",
+            "controller": "Users\\Permission\\Code\\Controllers\\Admin\\PermissionController::addAction",
+            "unique_name": "admin.users.permissions.add",
+            "route": "admin/users/permissions/add",
+            "permissions": "can_add",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "permission, add",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"]
+            }
+        }, {
+            "title": "Edit Permission {{ item.name }}",
+            "description": "Edit Permission {{ item.name }}.",
+            "controller": "Users\\Permission\\Code\\Controllers\\Admin\\PermissionController::editAction",
+            "unique_name": "admin.users.permissions.edit",
+            "route": "admin/users/permissions/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "permission, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Permission Detail: {{ item.name }}",
+            "description": "Permission Detail: {{ item.name }}",
+            "controller": "Users\\Permission\\Code\\Controllers\\Admin\\PermissionController::detailAction",
+            "unique_name": "admin.users.permissions.detail",
+            "route": "admin/users/permissions/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "permission, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Permission Delete: {{ item.name }}",
+            "description": "Permission Delete: {{ item.name }}",
+            "controller": "Users\\Permission\\Code\\Controllers\\Admin\\PermissionController::deleteAction",
+            "unique_name": "admin.users.permissions.delete",
+            "route": "admin/users/permissions/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "permission, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"]
+            }
+        }, {
+            "title": "Permission Save: {{ item.name }}",
+            "description": "Permission Save: {{ item.name }}",
+            "controller": "Users\\Permission\\Code\\Controllers\\Admin\\PermissionController::saveAction",
+            "unique_name": "admin.users.permissions.save",
+            "route": "admin/users/permissions/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "permission, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+
+        }]
+} 	

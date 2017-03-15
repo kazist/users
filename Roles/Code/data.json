@@ -1,0 +1,24 @@
+
+[{
+        "tracking_id": "1",
+        "title": "Super Admin",
+        "alias": "SUPER_ADMIN",
+        "published": "1"
+    }, {
+        "tracking_id": "2",
+        "title": "Admin",
+        "alias": "ADMIN",
+        "published": "1"
+    }, {
+        "tracking_id": "3",
+        "title": "Moderator",
+        "alias": "MODERATOR",
+        "published": "1"
+    }, {
+        "tracking_id": "4",
+        "title": "User",
+        "alias": "USER",
+        "published": "1"
+    }]
+
+

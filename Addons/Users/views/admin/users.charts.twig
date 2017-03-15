@@ -1,0 +1,19 @@
+<div>
+    {% if usergroups|length > 0 %}
+        <ul class="list-group">
+            {% for usergroup in usergroups %}
+                <li class="list-group-item "style="padding:5px;">
+                    <span class="badge bg-blue">{{  usergroup.total_member }}</span>
+                    <a href="{{ generate_url('admin.users.users', {'group_id': usergroup.id}) }}" title='{{  usergroup.name }}'>
+                        {{  usergroup.name }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+
+<a class="btn btn-default btn-xs btn-flat" href="{{ generate_url('admin.users.groups') }}" title='View All'>
+    <i class="fa fa-chevron-right"></i>
+    View All
+</a>

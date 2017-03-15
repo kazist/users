@@ -1,0 +1,73 @@
+{
+    "UsersUsersCodeTablesUsers": {
+        "name": "users_users",
+        "namespace": "Users\\Users\\Code",
+        "class": "Users",
+        "fields": {
+            "1": {
+                "name": "username",
+                "type": "string",
+                "size": "255",
+                "default": "",
+                "index": "unique",
+                "comment": ""
+            },
+            "2": {
+                "name": "email",
+                "type": "string",
+                "size": "255",
+                "default": "",
+                "index": "unique",
+                "comment": ""
+            },
+            "3": {
+                "name": "name",
+                "type": "string",
+                "size": "",
+                "default": "",
+                "index": "unique",
+                "comment": ""
+            },
+            "4": {
+                "name": "",
+                "type": "integer",
+                "size": "",
+                "default": "",
+                "index": "none",
+                "comment": ""
+            },
+            "5": {
+                "name": "",
+                "type": "integer",
+                "size": "",
+                "default": "",
+                "index": "none",
+                "comment": ""
+            },
+            "6": {
+                "name": "",
+                "type": "integer",
+                "size": "",
+                "default": "",
+                "index": "none",
+                "comment": ""
+            },
+            "7": {
+                "name": "",
+                "type": "integer",
+                "size": "",
+                "default": "",
+                "index": "none",
+                "comment": ""
+            },
+            "8": {
+                "name": "",
+                "type": "integer",
+                "size": "",
+                "default": "",
+                "index": "none",
+                "comment": ""
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+Users\Users\Code\Tables\Users:
+  table: users_users
+  type: entity
+  id:
+    id:
+      type: integer
+      generator: { strategy: AUTO }
+  fields:
+    inviter_id:
+      name: inviter_id
+      type: integer
+      length: 11
+      nullable: true
+    name:
+      name: name
+      type: string
+      length: '255'
+      nullable: false
+    is_admin:
+      name: is_admin
+      type: integer
+      length: 11
+      nullable: true
+    username:
+      name: username
+      type: string
+      length: '255'
+      nullable: false
+    password:
+      name: password
+      type: string
+      length: '255'
+      nullable: false
+    salt:
+      name: salt
+      type: string
+      length: 255
+      nullable: true
+    email:
+      name: email
+      type: string
+      length: '255'
+      nullable: false
+    gender:
+      name: gender
+      type: string
+      length: 255
+      nullable: true
+    country_id:
+      name: country_id
+      type: integer
+      length: 11
+      nullable: true
+    location_id:
+      name: location_id
+      type: integer
+      length: 11
+      nullable: true
+    town:
+      name: town
+      type: string
+      length: 255
+      nullable: true
+    phone:
+      name: phone
+      type: string
+      length: 255
+      nullable: true
+    phone_iso:
+      name: phone_iso
+      type: string
+      length: 255
+      nullable: true
+    phone_code:
+      name: phone_code
+      type: integer
+      length: 11
+      nullable: true
+    address:
+      name: address
+      type: text
+      nullable: true
+    points:
+      name: points
+      type: integer
+      length: 11
+      nullable: true
+    avatar:
+      name: avatar
+      type: integer
+      length: 11
+      nullable: true
+    verification:
+      name: verification
+      type: string
+      length: 255
+      nullable: true
+    is_verified:
+      name: is_verified
+      type: integer
+      length: 11
+      nullable: true
+    ordering:
+      name: ordering
+      type: integer
+      length: 11
+      nullable: true
+    published:
+      name: published
+      type: integer
+      length: 11
+      nullable: true
+    created_by:
+      name: created_by
+      type: integer
+      length: 11
+      nullable: false
+    date_created:
+      name: date_created
+      type: datetime
+      nullable: false
+    modified_by:
+      name: modified_by
+      type: integer
+      length: 11
+      nullable: false
+    date_modified:
+      name: date_modified
+      type: datetime
+      nullable: false
+    last_date_active:
+      name: last_date_active
+      type: datetime
+      nullable: true
+  indexes:
+    inviter_id_index:
+      columns: [inviter_id]
+    country_id_index:
+      columns: [country_id]
+  lifecycleCallbacks:
+    prePersist:
+      - onPrePersist
+      - onPrePersistCallbacks
+    preUpdate:
+      - onPreUpdate
+      - onPreUpdateCallbacks
