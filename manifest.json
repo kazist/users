@@ -1,9 +1,9 @@
 {
-    "name": "users",
+    "name": "kazist/users",
     "title": "User Manager Test",
     "icon": "assets\/users\/users\/icon.png",
     "description": "User Management Component for registering users and managing user authentication.",
-    "path": "users\/",
+    "path": "applications/Users/",
     "extension": "component",
     "version": 1
 }
