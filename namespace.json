@@ -26,5 +26,9 @@
     "UsersPermission": {
         "namespace": "Users\\Permission",
         "controller": "PermissionController"
+    },
+    "UsersUsersLogs": {
+        "namespace": "Users\\Users\\Logs",
+        "controller": "LogsController"
     }
 }

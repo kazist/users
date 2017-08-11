@@ -90,6 +90,10 @@ Users\Users\Code\Tables\Users:
       type: integer
       length: 11
       nullable: true
+    ip:
+      name: ip
+      type: string
+      length: 255
     verification:
       name: verification
       type: string
