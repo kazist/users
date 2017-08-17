@@ -3,11 +3,11 @@
     "title": "Users Manager",
     "explanation": "Users Manager",
     "description": "Users Manager",
-    "version": 79,
+    "version": 80,
     "has_view": "1",
     "tie_field": "0",
     "email_on_new": "0",
     "email_on_edit": "0",
     "email_on_delete": "0",
-    "date_file_modified": "2017-08-05 20:06:27"
+    "date_file_modified": "2017-08-17 19:33:38"
 }

@@ -94,6 +94,7 @@ Users\Users\Code\Tables\Users:
       name: ip
       type: string
       length: 255
+      nullable: true
     verification:
       name: verification
       type: string

@@ -144,7 +144,7 @@ class Users extends \Kazist\Table\BaseTable
     /**
      * @var string
      *
-     * @ORM\Column(name="ip", type="string", length=255)
+     * @ORM\Column(name="ip", type="string", length=255, nullable=true)
      */
     protected $ip;
 
