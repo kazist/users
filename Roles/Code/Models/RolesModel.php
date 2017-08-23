@@ -25,16 +25,16 @@ class RolesModel extends BaseModel {
 
         $role_id = $this->request->get('role_id');
         $permission = $this->request->get('permission');
-        $route_id = $this->request->get('route_id');
+        $route = $this->request->get('route');
         $value = $this->request->get('value');
 
         $data_obj = new \stdClass();
         $data_obj->role_id = $role_id;
-        $data_obj->route_id = $route_id;
+        $data_obj->route = $route;
         $exist_obj = clone $data_obj;
         $data_obj->$permission = (int) $value;
 
-        $id = $this->saveRecordByEntity('#__system_routes_permissions', $data_obj, array('role_id=:role_id', 'route_id=:route_id'), $exist_obj);
+        $id = $this->saveRecordByEntity('#__users_permission', $data_obj, array('role_id=:role_id', 'route_id=:route_id'), $exist_obj);
     }
 
     public function getViewSides() {
@@ -110,7 +110,7 @@ class RolesModel extends BaseModel {
 
         $query = new Query();
         $query->select('srp.*');
-        $query->from('#__system_routes_permissions', 'srp');
+        $query->from('#__users_permission', 'srp');
         $query->where('srp.route_id LIKE :route_id');
         $query->setParameter('route_id', $record->id);
         $record = $query->loadObject();
