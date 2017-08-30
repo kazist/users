@@ -68,7 +68,7 @@ class RolesModel extends BaseModel {
                         $code_folder = JPATH_ROOT . 'applications/' . str_replace('\\', '/', $namespace['namespace']);
 
                         if (file_exists($code_folder . '/Code/route.json')) {
-
+                            
                             $namespace_key = str_replace('\\', '', $namespace['namespace']);
                             $namespace_label = str_replace('\\', ' ', $namespace['namespace']);
                             $tmp_array[$namespace_key] = array('value' => $namespace['namespace'], 'text' => $namespace_label);
