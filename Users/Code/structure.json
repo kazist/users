@@ -222,6 +222,7 @@
         "table": {
             "fields": [
                 "name",
+                "inviter_id",
                 "is_admin",
                 "gender",
                 "country_id",
@@ -234,6 +235,7 @@
             ],
             "has_label": [
                 "name",
+                "inviter_id",
                 "is_admin",
                 "gender",
                 "country_id",
@@ -278,6 +280,30 @@
             }
         },
         {
+            "dropdown_filter": "1",
+            "nullable": "0",
+            "name": "name",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "name",
+            "class_name": "name",
+            "default_value": "",
+            "size": "255",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
             "dropdown_filter": "0",
             "nullable": "1",
             "name": "inviter_id",
@@ -297,34 +323,10 @@
                     "data_source": "db_table",
                     "join_field": "id",
                     "display_field": [
-                        "name"
+                        "username"
                     ],
                     "join_table_name": "users_users"
                 },
-                "save": {
-                    "index": ""
-                },
-                "media": [],
-                "payment": []
-            }
-        },
-        {
-            "dropdown_filter": "1",
-            "nullable": "0",
-            "name": "name",
-            "html_type": "text",
-            "mysql_type": "varchar",
-            "view_side": "both",
-            "index": "",
-            "id_name": "name",
-            "class_name": "name",
-            "default_value": "",
-            "size": "255",
-            "readonly": "",
-            "format_value": "",
-            "parameters": {
-                "general": [],
-                "source": [],
                 "save": {
                     "index": ""
                 },
@@ -1070,9 +1072,9 @@
         },
         "select": [
             "uu.id",
-            "uu.inviter_id",
-            "uu_4256.name AS inviter_id_name",
             "uu.name",
+            "uu.inviter_id",
+            "uu_2866.username AS inviter_id_username",
             "uu.is_admin",
             "uu.username",
             "uu.password",
@@ -1098,17 +1100,19 @@
             "uu.ordering",
             "uu.published",
             "uu.created_by",
+            "uu_3223.name AS created_by_name",
             "uu.date_created",
             "uu.modified_by",
+            "uu_2742.name AS modified_by_name",
             "uu.date_modified",
             "uu.last_date_active"
         ],
         "leftjoin": [
             {
                 "table": "Users\\Users\\Code\\Tables\\Users",
-                "alias": "uu_4256",
+                "alias": "uu_2866",
                 "name": "#__users_users",
-                "on": "uu.inviter_id = uu_4256.id"
+                "on": "uu.inviter_id = uu_2866.id"
             },
             {
                 "table": "Setup\\Countries\\Code\\Tables\\Countries",
@@ -1121,6 +1125,18 @@
                 "alias": "mm",
                 "name": "#__media_media",
                 "on": "uu.avatar = mm.id"
+            },
+            {
+                "table": "Users\\Users\\Code\\Tables\\Users",
+                "alias": "uu_3223",
+                "name": "#__users_users",
+                "on": "uu.created_by = uu_3223.id"
+            },
+            {
+                "table": "Users\\Users\\Code\\Tables\\Users",
+                "alias": "uu_2742",
+                "name": "#__users_users",
+                "on": "uu.modified_by = uu_2742.id"
             }
         ]
     }
