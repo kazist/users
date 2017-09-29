@@ -26,6 +26,28 @@ use Kazist\Service\Database\Query;
  */
 class UsersModel extends BaseModel {
 
+    public function appendSearchQuery($query) {
+
+        $document = $this->container->get('document');
+        $view = $this->request->get('view');
+        $type = $this->request->get('type');
+        $user_id = $this->request->get('user_id');
+
+        $search = $document->search;
+        $email = $search['email'];
+        $username = $search['username'];
+
+        parent::appendSearchQuery($query);
+
+        if ($email <> '' || $username <> '') {
+            $query->where('uu.email= :email OR uu.username= :username');
+            $query->setParameter('email', $email);
+            $query->setParameter('username', $username);
+        }
+
+        return $query;
+    }
+
     /**
      * Save Function
      *
@@ -446,7 +468,7 @@ class UsersModel extends BaseModel {
         $factory = new KazistFactory;
 
         $keyword = $this->request->get('keyword');
-        
+
         $query = new Query();
         $query->select('u.id, u.username, u.name, u.phone, u.email');
         $query->from('#__users_users', 'u');
