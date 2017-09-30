@@ -210,8 +210,9 @@ class UsersModel extends BaseModel {
             $user_obj->id = $user->id;
             $user_obj->is_verified = 1;
             $user_obj->published = 1;
-            $factory->saveRecord('#__users_users', $user_obj);
-
+            if ($user_obj->id) {
+                $factory->saveRecord('#__users_users', $user_obj);
+            }
             return true;
         } else {
             return false;
@@ -345,8 +346,9 @@ class UsersModel extends BaseModel {
                 $user_obj = new \stdClass();
                 $user_obj->id = $user->id;
                 $user_obj->password = md5($form['new_password']);
-                $factory->saveRecord('#__users_users', $user_obj);
-
+                if ($user_obj->id) {
+                    $factory->saveRecord('#__users_users', $user_obj);
+                }
                 $msg = 'Your Password Was Change Successfully.';
                 $factory->enqueueMessage($msg, 'info');
                 $return_url = $this->generateUrl('users.users.edit');
@@ -387,8 +389,9 @@ class UsersModel extends BaseModel {
 
             $user->password_raw = $password;
             $user->password = md5($password);
-            $factory->saveRecord('#__users_users', $user);
-
+            if ($user->id) {
+                $factory->saveRecord('#__users_users', $user);
+            }
             $user_arr = (array) $user;
             $user_arr['login_url'] = $this->generateUrl('login');
             $email->sendDefinedLayoutEmail('users.users.forgot', $form['email'], $user_arr);
@@ -509,7 +512,9 @@ class UsersModel extends BaseModel {
             $data_obj = new \stdClass();
             $data_obj->id = $item_id;
             $data_obj->published = ($item_status) ? 0 : 1;
-            $factory->saveRecord('#__users_users', $data_obj);
+            if ($data_obj->id) {
+                $factory->saveRecord('#__users_users', $data_obj);
+            }
         } else {
             parent::updateYesNo();
         }

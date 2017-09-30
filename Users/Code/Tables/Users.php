@@ -128,6 +128,13 @@ class Users extends \Kazist\Table\BaseTable
     protected $address;
 
     /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="dob", type="datetime", nullable=true)
+     */
+    protected $dob;
+
+    /**
      * @var integer
      *
      * @ORM\Column(name="points", type="integer", length=11, nullable=true)
@@ -580,6 +587,30 @@ class Users extends \Kazist\Table\BaseTable
     public function getAddress()
     {
         return $this->address;
+    }
+
+    /**
+     * Set dob
+     *
+     * @param \DateTime $dob
+     *
+     * @return Users
+     */
+    public function setDob($dob)
+    {
+        $this->dob = $dob;
+
+        return $this;
+    }
+
+    /**
+     * Get dob
+     *
+     * @return \DateTime
+     */
+    public function getDob()
+    {
+        return $this->dob;
     }
 
     /**

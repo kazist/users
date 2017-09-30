@@ -80,6 +80,10 @@ Users\Users\Code\Tables\Users:
       name: address
       type: text
       nullable: true
+    dob:
+      name: dob
+      type: datetime
+      nullable: true
     points:
       name: points
       type: integer

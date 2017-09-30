@@ -20,6 +20,7 @@
                                                 "inviter_id",
                                                 "name",
                                                 "username",
+                                                "dob",
                                                 "password",
                                                 "email",
                                                 "is_admin",
@@ -227,8 +228,9 @@
                 "gender",
                 "country_id",
                 "town",
-                "ip",
                 "phone",
+                "dob",
+                "ip",
                 "is_verified",
                 "published",
                 "date_created",
@@ -241,8 +243,8 @@
                 "gender",
                 "country_id",
                 "town",
-                "ip",
                 "phone",
+                "ip",
                 "is_verified",
                 "published",
                 "date_created",
@@ -676,6 +678,31 @@
         {
             "dropdown_filter": "0",
             "nullable": "1",
+            "name": "dob",
+            "html_type": "datetime",
+            "mysql_type": "datetime",
+            "view_side": "",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "view_side": "both",
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
             "name": "points",
             "html_type": "text",
             "mysql_type": "int",
@@ -1076,7 +1103,7 @@
             "uu.id",
             "uu.name",
             "uu.inviter_id",
-            "uu_2866.username AS inviter_id_username",
+            "uu_691.username AS inviter_id_username",
             "uu.is_admin",
             "uu.username",
             "uu.password",
@@ -1092,6 +1119,7 @@
             "uu.phone_iso",
             "uu.phone_code",
             "uu.address",
+            "uu.dob",
             "uu.points",
             "uu.avatar",
             "mm.title AS avatar_title",
@@ -1102,19 +1130,19 @@
             "uu.ordering",
             "uu.published",
             "uu.created_by",
-            "uu_3223.name AS created_by_name",
+            "uu_8955.name AS created_by_name",
             "uu.date_created",
             "uu.modified_by",
-            "uu_2742.name AS modified_by_name",
+            "uu_8792.name AS modified_by_name",
             "uu.date_modified",
             "uu.last_date_active"
         ],
         "leftjoin": [
             {
                 "table": "Users\\Users\\Code\\Tables\\Users",
-                "alias": "uu_2866",
+                "alias": "uu_691",
                 "name": "#__users_users",
-                "on": "uu.inviter_id = uu_2866.id"
+                "on": "uu.inviter_id = uu_691.id"
             },
             {
                 "table": "Setup\\Countries\\Code\\Tables\\Countries",
@@ -1130,15 +1158,15 @@
             },
             {
                 "table": "Users\\Users\\Code\\Tables\\Users",
-                "alias": "uu_3223",
+                "alias": "uu_8955",
                 "name": "#__users_users",
-                "on": "uu.created_by = uu_3223.id"
+                "on": "uu.created_by = uu_8955.id"
             },
             {
                 "table": "Users\\Users\\Code\\Tables\\Users",
-                "alias": "uu_2742",
+                "alias": "uu_8792",
                 "name": "#__users_users",
-                "on": "uu.modified_by = uu_2742.id"
+                "on": "uu.modified_by = uu_8792.id"
             }
         ]
     }
