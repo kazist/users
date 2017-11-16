@@ -82,7 +82,7 @@ Users\Users\Code\Tables\Users:
       nullable: true
     dob:
       name: dob
-      type: datetime
+      type: date
       nullable: true
     points:
       name: points

@@ -130,7 +130,7 @@ class Users extends \Kazist\Table\BaseTable
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dob", type="datetime", nullable=true)
+     * @ORM\Column(name="dob", type="date", nullable=true)
      */
     protected $dob;
 
