@@ -25,6 +25,7 @@ Users\Users\Code\Tables\Users:
       name: username
       type: string
       length: '255'
+      unique: 'true'
       nullable: false
     password:
       name: password
@@ -40,6 +41,7 @@ Users\Users\Code\Tables\Users:
       name: email
       type: string
       length: '255'
+      unique: 'true'
       nullable: false
     gender:
       name: gender

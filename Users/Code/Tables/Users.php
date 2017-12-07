@@ -46,7 +46,7 @@ class Users extends \Kazist\Table\BaseTable
     /**
      * @var string
      *
-     * @ORM\Column(name="username", type="string", length=255, nullable=false)
+     * @ORM\Column(name="username", type="string", length=255, nullable=false, unique=true)
      */
     protected $username;
 
@@ -67,7 +67,7 @@ class Users extends \Kazist\Table\BaseTable
     /**
      * @var string
      *
-     * @ORM\Column(name="email", type="string", length=255, nullable=false)
+     * @ORM\Column(name="email", type="string", length=255, nullable=false, unique=true)
      */
     protected $email;
 
