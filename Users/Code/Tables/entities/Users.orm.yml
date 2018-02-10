@@ -148,6 +148,8 @@ Users\Users\Code\Tables\Users:
       columns: [inviter_id]
     country_id_index:
       columns: [country_id]
+    location_id_index:
+      columns: [location_id]
     created_by_index:
       columns: [created_by]
     modified_by_index:
