@@ -1,2 +1,4 @@
 
 {{ item.name }} ({{ item.username }}) {{ item.email }}
+
+<a class="btn btn-default btn-xs" href="{{ url('admin.users.users.remoteloginurl',{'id':item.id}) }}">Remote Login</a>

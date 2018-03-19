@@ -1,0 +1,54 @@
+Users\Accesskeys\Code\Tables\Accesskeys:
+  table: users_accesskeys
+  type: entity
+  id:
+    id:
+      type: integer
+      generator: { strategy: AUTO }
+  fields:
+    accesskey:
+      name: accesskey
+      type: string
+      length: 255
+      nullable: false
+    expiry_date:
+      name: expiry_date
+      type: datetime
+      nullable: true
+    user_id:
+      name: user_id
+      type: integer
+      length: 11
+      nullable: true
+    date_created:
+      name: date_created
+      type: datetime
+      nullable: true
+    date_modified:
+      name: date_modified
+      type: datetime
+      nullable: true
+    modified_by:
+      name: modified_by
+      type: integer
+      length: 11
+      nullable: true
+    created_by:
+      name: created_by
+      type: integer
+      length: 11
+      nullable: true
+  indexes:
+    user_id_index:
+      columns: [user_id]
+    modified_by_index:
+      columns: [modified_by]
+    created_by_index:
+      columns: [created_by]
+  lifecycleCallbacks:
+    prePersist:
+      - onPrePersist
+      - onPrePersistCallbacks
+    preUpdate:
+      - onPreUpdate
+      - onPreUpdateCallbacks

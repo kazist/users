@@ -473,6 +473,28 @@ class UsersModel extends BaseModel {
         exit;
     }
 
+    public function getAccessKey() {
+
+        $factory = new KazistFactory();
+
+        $id = $this->request->get('id');
+
+        $record = $factory->getRecord('#__users_accesskeys', 'ua', array('ua.user_id=:user_id'), array('user_id' => $id));
+
+        if (!is_object($record)) {
+            
+            $data = new \stdClass();
+            $data->accesskey = uniqid();
+            $data->user_id = $id;
+            $data->expiry_date = date('Y-m-d H:i:s', strtotime('+1 hour'));
+            $temp_id = $factory->saveRecord('#__users_accesskeys', $data);
+
+            $record = $factory->getRecord('#__users_accesskeys', 'ua', array('ua.id=:id'), array('id' => $temp_id));
+        }
+
+        return $record;
+    }
+
     public function fetchUser() {
 
         $factory = new KazistFactory;

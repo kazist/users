@@ -18,19 +18,6 @@
             "short_body": "Forgot Password or Username",
             "body": "<p><strong>Forgot Your Password<\/strong><\/p>\r\n<p>Your password is now reset.<\/p>\r\n<p>Name: {{name}}<\/p>\r\n<p>UserName: {{username}}<\/p>\r\n<p>New Password: {{password_raw}}<\/p>\r\n<p>Click to link below to login to your account.&nbsp;<\/p>\r\n<p>&nbsp;Please change your password after logging in.<\/p>\r\n<p><a href=\"{{ login_url }}\">Login to your Account<\/a><\/p>\r\n<p>Or copy and paste this url<\/p>\r\n<p>{{ login_url }}<\/p>"
         }],
-    "scheduled": [{
-            "tracking_id": "1",
-            "unique_name": "users.users.scheduled",
-            "subject": "You Need Help  on using the site",
-            "body": "<p>Hi {{user.name}},<\/p>\r\n<p>You Need Help  on using the site<\/p>",
-            "date_field": "date_created",
-            "user_field": "created_by",
-            "is_repeated": "1",
-            "wait_period": "30",
-            "repeat_after": "3",
-            "repeat_stop": "2",
-            "limit": "4"
-        }],
     "harvester": [{
             "tracking_id": "1",
             "title": "Registered User",

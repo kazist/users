@@ -26,6 +26,15 @@
         "address": "Test Address, P.O Box 555555",
         "published": "1",
         "is_verified": "1"
+         }, {
+        "_table_name": "notification_newsletters_scheduled_tables",
+        "system_tracking_id": "101",
+        "title": "User (by date_created)",
+        "extension_path": "users_users",
+        "user_field": "id",
+        "email_field": "email",
+        "date_field": "date_created",
+        "published": "1"
     }]
 
 

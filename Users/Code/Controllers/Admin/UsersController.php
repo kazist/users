@@ -23,6 +23,23 @@ use Users\Users\Code\Models\UsersModel;
 
 class UsersController extends BaseController {
 
+    public function remoteloginurlAction() {
+
+        $this->model = new UsersModel();
+
+        $item = $this->model->getRecord();
+        $accesskey = $this->model->getAccessKey();
+
+        $data_arr['item'] = $item;
+        $data_arr['accesskey'] = $accesskey;
+
+        $this->html = $this->render('Users:Users:Code:views:admin:remoteloginurl.index.twig', $data_arr);
+
+        $response = $this->response($this->html);
+
+        return $response;
+    }
+
     public function saverightsAction() {
 
         $tmpclass = new \stdClass();

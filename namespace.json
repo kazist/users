@@ -38,5 +38,9 @@
     "UsersDoubleauthUsers": {
         "namespace": "Users\\Doubleauth\\Users",
         "controller": "UsersController"
+    },
+    "UsersAccesskeys": {
+        "namespace": "Users\\Accesskeys",
+        "controller": "AccesskeysController"
     }
 }

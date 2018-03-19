@@ -1,5 +1,6 @@
 {
     "frontend": [{
+
             "title": "Login With Google",
             "description": "Login With Google",
             "controller": "Users\\Users\\Code\\Controllers\\UsersController::googlereturnAction",
@@ -221,6 +222,22 @@
             "roles": {
                 "SUPER_ADMIN": ["can_write", "can_writeown"],
                 "ADMIN": ["can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Remote Login Url",
+            "description": "Remote Login Url",
+            "controller": "Users\\Users\\Code\\Controllers\\Admin\\UsersController::remoteloginurlAction",
+            "unique_name": "admin.users.users.remoteloginurl",
+            "route": "admin/users/users/remoteloginurl",
+            "permissions": "can_view",
+            "arguments": {},
+            "keywords": "user, remote, login, url",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 0,
+            "roles": {
+                "SUPER_ADMIN": ["can_view"],
+                "ADMIN": ["can_view"]
             }
         }, {
             "title": "Save Rights",

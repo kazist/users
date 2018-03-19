@@ -1,0 +1,74 @@
+{# empty Twig template #}
+
+
+{% import "form.macro.twig" as forms %}
+
+<input id="hosting_id" type="hidden" name="hosting_id" value="{{ id }}" >
+
+{{ forms.input('_token' ) }} 
+
+<div class="pushview-wrapper">
+
+    <h3 class="text-center">
+        Link to Login Remotely
+    </h3>
+
+    <div class="pushview">
+        <div class="table-responsive">
+            <table class="table table-condensed table-bordered">
+                <thead>
+                    <tr>
+                        <th colspan="4">
+                            User Details
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>{{ item.name }}</td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td>{{ item.username }}</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>{{ item.email }}</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">
+                            Link Details
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Expiry date</td>
+                        <td>{{ accesskey.expiry_date }}</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">
+                            {{ forms.input('textarea', 'textarea', url('remote_login', {'accesskey':accesskey.accesskey}, 0 )) }} 
+                            Kindly copy the link above and open it on a new browser. <br>
+                            The above link will "LOG OUT" previous logged in sessions.
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .pushview-wrapper{
+        min-height:  450px;
+        background: white;
+        padding: 20px;
+    }     
+
+    .pushview-wrapper .pushview{
+        max-width: 500px;
+        margin: 20px auto;
+
+    }
+</style>
