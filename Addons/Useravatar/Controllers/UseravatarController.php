@@ -34,7 +34,7 @@ class UseravatarController extends AddonController
 
         if ($email != '') {
             $user = $factory->getRecord('#__users_users', 'uu', array('email=:email'), array('email' => $email));
-
+            $data_arr['user'] = $user;
             $data_arr['user_id'] = $user->id;
         }
 
