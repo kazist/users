@@ -30,10 +30,10 @@ class UseravatarController extends AddonController
         $data_arr['my_account_link'] = $my_account_link;
 
         $notheme = $this->request->get('notheme');
-        $useremail = $this->request->get('useremail');
+        $email = $this->request->get('email');
 
-        if ($useremail != '') {
-            $user = $factory->getRecord('#__users_users', 'uu', array('email=:email'), array('email' => $useremail));
+        if ($email != '') {
+            $user = $factory->getRecord('#__users_users', 'uu', array('email=:email'), array('email' => $email));
 
             $data_arr['user_id'] = $user->id;
         }
